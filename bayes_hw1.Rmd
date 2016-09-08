@@ -1,0 +1,20 @@
+---
+title: "hw1"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## R Markdown
+
+
+```{r }
+data("airquality" )
+airquality<-airquality
+head(airquality)
+lm(Ozone ~ Wind, data=airquality)
+
+```
